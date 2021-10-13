@@ -25,6 +25,8 @@ git pull origin master
 To push your changes after modifiying any
 ========
 git add <files>
+ 
 git commit
+ 
 git push -u origin master
 =========
