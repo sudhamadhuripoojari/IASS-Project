@@ -1,0 +1,90 @@
+/* @media (max-width: 451px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .wrapper.count-down {
+    height: 80px;
+  }
+  .wrapper .count-down .timer {
+    width: 30px;
+    height: 30px;
+  }
+  .count-down .timer .number {
+    font-size: 20px;
+  }
+  .count-down .timer .text {
+    font-size: 12px;
+  }
+  .count-down .clone {
+    font-size: 40px;
+  }
+}
+@media (max-width: 542px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .wrapper .count-down .timer {
+    border: none;
+  }
+  .count-down .timer .number {
+    font-size: 28px;
+  }
+  .count-down .timer .text {
+    font-size: 15px;
+  }
+  .count-down .clone {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 8em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  .wrapper {
+    width: 500px;
+    padding: 0 10px;
+  }
+  .wrapper .count-down .timer {
+    width: 80px;
+    height: 80px;
+  }
+  .count-down .timer .number {
+    font-size: 20px;
+  }
+  .count-down .timer .text {
+    font-size: 10px;
+  }
+  .count-down .clone {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 8em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+  .wrapper {
+    width: 700px;
+  }
+  .wrapper .count-down .timer {
+    width: 80px;
+    height: 80px;
+  }
+  .count-down .timer .number {
+    font-size: 20px;
+  }
+  .count-down .timer .text {
+    font-size: 10px;
+  }
+  .count-down .clone {
+    font-size: 40px;
+  }
+} */

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  min-height: 100%;
+  min-width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: #000;
+  /* background: url(/img/ocFsrq.jpg); */
+  /* background-image: url(/img/Brush\ Lettered\ Night\ Sky\ Nature\ Desktop\ Wallpaper.png); */
+  background-image: center;
+  background-size: cover;
+  position: relative;
+}
+.content {
+  position: relative;
+  z-index: 1;
+}
+.content h2 {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 300;
+}
+.content h1 {
+  color: #fff;
+  font-size: 10em;
+  font-weight: 700;
+}
+.content form {
+  margin: 50px 0;
+  border-radius: 25px; /* <--border-radius code not understood-- > */
+}
+
+.content form .email-field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .email-field input {
+  width: 80%;
+  height: 7vh;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+form .email-field button {
+  height: 7vh;
+  width: 200px;
+  outline: none;
+  border: none;
+  background: #020f70;
+  color: #fff;
+  cursor: pointer;
+  font: 20px;
+}
+form .email-field button:hover {
+  background: #24aac2;
+  transition: 0.5s ease-in-out linear;
+}
+
+.countdown {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .countdown .timer {
+  height: 15vh;
+  width: 120px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown .timer .numb {
+  font-size: 25px;
+  font-weight: 600;
+}
+.countdown .timer .text {
+  font-size: 15px;
+}
+@media (max-width: 1280px) {
+  .content {
+    min-height: 10vh;
+  }
+  .content h2 {
+    color: #fff;
+    margin-top: 9em;
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 8em;
+    margin-top: 2em;
+    text-align: center;
+    margin: 150px;
+    height: 100%;
+  }
+  .content form .email-field {
+    width: 80%;
+    padding: 10px, 0px;
+    margin-left: 100px;
+  }
+  .countdown {
+    font-size: 88px;
+    padding: 80px;
+  }
+  .content .countdown .timer {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .countdown {
+    font-size: 72px;
+    padding: 0 20px;
+  }
+  .content h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .content h1 {
+    font-size: 6em;
+  }
+  .content form .email-field {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown {
+    font-size: 56px;
+  }
+  .content h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+  }
+  .content h1 {
+    font-size: 72px;
+  }
+  .content form .email-field {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .content h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+  }
+  .content h1 {
+    font-size: 56px;
+  }
+  .countdown {
+    font-size: 42px;
+  }
+  .content form .email-field {
+    width: 100%;
+  }
+}
