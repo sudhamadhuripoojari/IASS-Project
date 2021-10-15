@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: capitalize;
+  min-height: 100%;
+  min-width: 100%;
 }
 header {
   display: flex;
@@ -16,7 +18,7 @@ header {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background: #111;
+  background: #000;
   /* background: url(/img/ocFsrq.jpg); */
   /* background-image: url(/img/Brush\ Lettered\ Night\ Sky\ Nature\ Desktop\ Wallpaper.png); */
   background-image: center;
@@ -27,15 +29,22 @@ header {
   position: relative;
   z-index: 1;
 }
+
+.content h2 {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 300;
+}
 .content h1 {
   color: #fff;
-  font-size: 42px;
+  font-size: 10em;
   font-weight: 700;
 }
 .content form {
   margin: 50px 0;
-  border-radius: 25px;
+  border-radius: 25px; /* <--border-radius code not understood-- > */
 }
+
 .content form .email-field {
   height: 50px;
   width: 100%;
@@ -55,7 +64,7 @@ form .email-field button {
   width: 200px;
   outline: none;
   border: none;
-  background: #334afe;
+  background: #020f70;
   color: #fff;
   cursor: pointer;
   font: 20px;
@@ -75,9 +84,9 @@ form .email-field button:hover {
   justify-content: space-between;
 }
 .content .countdown .timer {
-  height: 15vh;
-  width: 90px;
-  border: 4px solid;
+  height: 100px;
+  width: 100px;
+  border: 2px solid;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -92,11 +101,37 @@ form .email-field button:hover {
   font-size: 15px;
 }
 @media (max-width: 1280px) {
+
+  .content {
+    min-height: 10vh;
+  }
+  .content h2 {
+    color: #fff;
+    margin-top: 9em;
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 8em;
+    margin-top: 2em;
+    text-align: center;
+    margin: 150px;
+    height: 100%;
+  }
+  .content form .email-field {
+    width: 80%;
+    padding: 10px, 0px;
+    margin-left: 100px;
+  }
   .countdown {
     font-size: 88px;
+    padding: 80px;
   }
-  .countdown h1 {
-    font-size: 128px;
+  .content .countdown .timer {
+    height: 100px;
+    width: 100px;
   }
 }
 @media (max-width: 1024px) {
@@ -104,9 +139,13 @@ form .email-field button:hover {
     font-size: 72px;
     padding: 0 20px;
   }
-
-  .countdown h1 {
-    font-size: 96px;
+  .content h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+  }
+  .content h1 {
+    font-size: 6em;
   }
   .content form .email-field {
     width: 100%;
@@ -118,6 +157,12 @@ form .email-field button:hover {
   .countdown {
     font-size: 56px;
   }
+
+  .content h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+  }
   .content h1 {
     font-size: 72px;
   }
@@ -126,6 +171,11 @@ form .email-field button:hover {
   }
 }
 @media (max-width: 480px) {
+  .content h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+  }
   .content h1 {
     font-size: 56px;
   }
