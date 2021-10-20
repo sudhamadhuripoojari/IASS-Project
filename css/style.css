@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Festive&display=swap');
 
 * {
   margin: 0;
@@ -8,8 +10,22 @@
 body {
   font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
-  min-height: 100%;
-  min-width: 100%;
+  background: linear-gradient(-45deg, #52dcee, #0c0c0c, #13116d, #080808);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    transform: scale(20px);
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 header {
   display: flex;
@@ -18,65 +34,63 @@ header {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background: #000;
-  /* background: url(/img/ocFsrq.jpg); */
-  /* background-image: url(/img/Brush\ Lettered\ Night\ Sky\ Nature\ Desktop\ Wallpaper.png); */
-  background-image: center;
-  background-size: cover;
-  position: relative;
 }
 .content {
   position: relative;
   z-index: 1;
+  margin-top: 50px;
 }
-
 .content h2 {
   color: #fff;
-  font-size: 5em;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 400;
 }
 .content h1 {
-  color: #fff;
-  font-size: 10em;
   font-weight: 700;
-}
-.content form {
-  margin: 50px 0;
-  border-radius: 25px; /* <--border-radius code not understood-- > */
+  font-size: 80px;
+  color: #2ef3c2;
+  font-family: 'Arizonia', cursive;
 }
 
-.content form .email-field {
+.animate__animated animate__heartBeat {
+  --animate-duration: 3s;
+}
+.content .form {
+  margin: 50px 0;
+  border-radius: 25px;
+}
+.content .form .email-field {
   height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-form .email-field input {
+.form .email-field input {
   width: 80%;
   height: 7vh;
   padding-left: 20px;
   border: none;
   outline: none;
 }
-form .email-field button {
+.form .email-field button {
   height: 7vh;
-  width: 200px;
+  width: 220px;
   outline: none;
   border: none;
-  background: #020f70;
+  background: #334afe;
   color: #fff;
   cursor: pointer;
-  font-size: 20px;
 }
-form .email-field button:hover {
-  background: #24aac2;
+.form .email-field button:hover {
+  background: #2ef3c2;
   transition: 0.5s ease-in-out linear;
   transform: scale(0.8);
-  border-radius: 20%;
+  color: #0c0c0c;
+  font-size: 18px;
 }
 
-.countdown {
+.content .countdown {
   color: #fff;
   font-size: 20px;
   font-weight: 200;
@@ -93,6 +107,7 @@ form .email-field button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px;
 }
 
 .countdown .timer .numb {
@@ -106,88 +121,100 @@ form .email-field button:hover {
   font-size: 45px;
   font-family: bolder;
 }
-@media (max-width: 1280px) {
-  .content {
-    min-height: 10vh;
-  }
-  .content h2 {
-    color: #fff;
-    margin-top: 9em;
-    font-size: 4em;
-    font-weight: 100;
-    text-align: center;
-  }
+/*Visitor count*/
+.visitor {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-family: poppins;
+  margin-top: 20px;
+}
+section {
+  display: absolute;
+  z-index: 1;
+}
+.credits {
+  font-size: 10px;
+  text-align: center;
+  padding: 0 20px;
+  display: absolute;
+  color: #ffff;
 
-  .content h1 {
-    font-size: 8em;
-    margin-top: 2em;
-    text-align: center;
-    margin: 150px;
-    height: 100%;
-  }
-  .content form .email-field {
-    width: 80%;
-    padding: 10px, 0px;
-    margin-left: 100px;
-  }
-  .countdown {
+  z-index: 1;
+  margin-top: -80px;
+}
+
+/* media starts for big screen */
+
+@media (max-width: 1280px) {
+  .content .countdown {
     font-size: 88px;
-    padding: 80px;
   }
-  .content .countdown .timer {
-    height: 100px;
-    width: 100px;
+  .countdown h1 {
+    font-size: 128px;
+  }
+  .credits {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
-  .countdown {
+  .content .countdown {
     font-size: 72px;
     padding: 0 20px;
   }
-  .content h2 {
-    color: #fff;
-    font-size: 3em;
-    font-weight: 300;
+
+  .countdown h1 {
+    font-size: 96px;
   }
-  .content h1 {
-    font-size: 6em;
-  }
-  .content form .email-field {
+  .content .form .email-field {
     width: 100%;
     padding: 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .countdown {
+  .content .countdown {
     font-size: 56px;
-  }
-
-  .content h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 100;
   }
   .content h1 {
     font-size: 72px;
   }
-  .content form .email-field {
+  .content .form .email-field {
     width: 100%;
   }
 }
 @media (max-width: 480px) {
-  .content h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 100;
-  }
   .content h1 {
-    font-size: 56px;
-  }
-  .countdown {
-    font-size: 42px;
-  }
-  .content form .email-field {
     width: 100%;
+    font-size: 70px;
+    padding-bottom: 30px;
+  }
+  h2 {
+    margin-top: -300px;
+  }
+
+  .content .countdown {
+    font-size: 48px;
+  }
+  .content .form .email-field {
+    width: 100%;
+    margin-right: 12px;
+  }
+  .visitor {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .credits {
+    font-size: 20px;
+  }
+  .countdown .clone {
+    display: none;
+  }
+  .content .countdown .timer {
+    border: none;
+    margin: 0;
+  }
+  .countdown .timer .text {
+    font-size: 20px;
   }
 }
